@@ -19,7 +19,7 @@ void selection_sort(int arr[], int n) {
 
 int main(){
   int n;
-  cout << "Enter size of array";
+  cout << "Enter size of array: ";
   cin >> n;
   int arr[n];
   cout << "Enter elements of array: ";
