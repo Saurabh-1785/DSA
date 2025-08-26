@@ -20,7 +20,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    int rotateArray =  rotateArray(arr, n);
+    rotateArray(arr, n);
     cout << "Array after left rotation: ";
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";

@@ -51,6 +51,7 @@ int main(){
   int ssmallest = secondSmallest(arr, n);
 
   cout << "Second largest and Second smallest elements are " << slargest << " and " << ssmallest;
+  cout << endl;
 
   return 0;
 
