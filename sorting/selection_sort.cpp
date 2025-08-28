@@ -1,6 +1,7 @@
 //Find the smallest lement in array and swaap it it with firstelement and then find next smallest element and swap it with second element and so on
-
-#include <iostream>
+//time complexity - O(n^2)
+//space complexity - O(1)
+#include <bits/stdc++.h>
 using namespace std; 
 
 void selection_sort(int arr[], int n) {
@@ -11,9 +12,7 @@ void selection_sort(int arr[], int n) {
         min = j;
       }
     }
-    int temp = arr[min];
-    arr[min] = arr[i]; 
-    arr[i] = temp;
+    swap(arr[min], arr[i]);
   }
 }
 
@@ -33,3 +32,21 @@ int main(){
   }
   return 0;
 }
+
+/* DRY RUN
+input = [5,2,7,3,6,1] output = [1,2,3,5,6,7]
+
+1. i --> (0,n-2) => (0,4)
+  i=0 --> 5:
+  min=i=0
+  j -->(0,n-1) => (0, 5)
+  j=0:
+    arr[0]<arr[0] false
+    swap(5,5)
+  j=1:
+    arr[1]<arr[0] => 2< 5 true:
+      min=j=1
+    swap()
+  
+  
+*/
