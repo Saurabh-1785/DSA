@@ -13,7 +13,7 @@ void Missing(const vector<int>& arr, int n){
   for(int i=0; i<n-1; i++){
     sum2 += arr[i];
   }
-  cout << "missing: " << sum1 - sum2;
+  cout << "missing: " << sum1 - sum2 << endl;
 }
 
 int main() {

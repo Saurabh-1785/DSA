@@ -26,17 +26,22 @@ void avgShort(vector<int> X, int n) {
 }
 
 int main() {
-    int n;
-    cout << "Enter size of given array: ";
-    cin >> n;
+  string str_rn;
+  cout << "Enter Roll Number: ";
+  cin>>str_rn;
+  int n;
+  cout << "Enter size of given array: ";
+  cin >> n;
 
-    cout << "Enter elements of given array: ";
-    vector<int> A(n);
-    for (int i = 0; i < n; i++) cin >> A[i];
-    cout << "New Array X is" << endl;
+  cout << "Enter elements of given array: ";
+  vector<int> A(n);
+  for (int i = 0; i < n; i++) cin >> A[i];
+  
+  cout << "Roll Number: "<< str_rn << endl;
+  cout << "New Array X is" << endl;
 
-    avgLong(A, n);      // O(n^2) method
-    avgShort(A, n);  // O(n) method
+  avgLong(A, n);      // O(n^2) method
+  avgShort(A, n);  // O(n) method
 
-    return 0;
+  return 0;
 }
