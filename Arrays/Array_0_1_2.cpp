@@ -26,19 +26,19 @@ void sortArray(vector<int> &arr, int n) {
 
 int main() {
 
-    int n;
-    cout << "Enter the number of elements in the array: ";
-    cin >> n;
-    cout << "Enter array elements (only 0s, 1s and 2s): ";
-    vector<int> arr(n);
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-    sortArray(arr, n);
-    cout << "Sorted array: ";
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-    return 0;
+  int n;
+  cout << "Enter the number of elements in the array: ";
+  cin >> n;
+  cout << "Enter array elements (only 0s, 1s and 2s): ";
+  vector<int> arr(n);
+  for (int i = 0; i < n; i++) {
+      cin >> arr[i];
+  }
+  sortArray(arr, n);
+  cout << "Sorted array: ";
+  for (int i = 0; i < n; i++) {
+      cout << arr[i] << " ";
+  }
+  cout << endl;
+  return 0;
 }
